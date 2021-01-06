@@ -24,10 +24,17 @@ module.exports = {
         "x-invalid-end-tag": false
       }
     ],
+    "vue/no-unused-components": [
+      "error",
+      {
+        ignoreWhenBindingPresent: true
+      }
+    ],
     "no-debugger": "off",
     "no-unused-vars": "warn",
     "vue/no-unused-vars": "off"
   },
+  plugins: ["vue"],
   parserOptions: {
     parser: "babel-eslint"
   }
